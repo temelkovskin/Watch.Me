@@ -50,6 +50,5 @@ E:\Seavus\Watch.Me\Watch.Me\bin\Microsoft.Owin.Security.OAuth.xml
 E:\Seavus\Watch.Me\Watch.Me\bin\Microsoft.Owin.Security.Google.xml
 E:\Seavus\Watch.Me\Watch.Me\bin\Microsoft.Owin.Security.Twitter.xml
 E:\Seavus\Watch.Me\Watch.Me\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-E:\Seavus\Watch.Me\Watch.Me\obj\Debug\Watch.Me.csprojResolveAssemblyReference.cache
 E:\Seavus\Watch.Me\Watch.Me\obj\Debug\Watch.Me.dll
 E:\Seavus\Watch.Me\Watch.Me\obj\Debug\Watch.Me.pdb
