@@ -59,6 +59,7 @@ html {
 
 body {
   margin: 0;
+   background-image: url(/images/bg.png);
 }
 
 a:focus {
@@ -316,6 +317,8 @@ body {
   line-height: 1.428571429;
   color: #333333;
   background-color: #ffffff;
+   background-image: url(/images/bg.png);
+
 }
 
 input,
@@ -1241,9 +1244,9 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 100%) {
   .container {
-    max-width: 1170px;
+    max-width: 90%;
   }
   .col-lg-1,
   .col-lg-2,

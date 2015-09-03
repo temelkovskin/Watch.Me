@@ -1,31 +1,272 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<link href="~/Content/video.css" rel="stylesheet"/>
+<link href="~/Content/search.css" rel="stylesheet"/>
+<div class="sub_nav">
+    <div class="listi">
+        <ul>
+            <li class="active"><a href="#modern">Popular</a></li>
+            <li><a href="#oldSkool">Recommended</a></li>
+            <li><a href="#oldSkool">Recently Uploaded</a></li>
+     </ul>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class='search'>
+        <div class='search-container'>
+            <input placeholder='search' type='text'>
+            <a class='button'>
+                <i class='icon-search'></i>
+            </a>
+        </div>
     </div>
 </div>
+<div id="scatter">
+    <figure id="desk">  
+        <a href="#" id="estee">
+            <video id="myVideo" controls preload="auto" poster="http://s.cdpn.io/6035/vp_poster.jpg" width="380">
+                <source src="http://simplypx.com/images/Prometheus.mp4" type="video/mp4" />
+                <p>Your browser does not support the video tag.</p>
+            </video>
+            <div class="caption">Prometheus</div>
+            <div class="control">
+                <div class="btmControl">
+                    <div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+                    <div class="progress-bar">
+                        <div class="progress">
+                            <span class="bufferBar"></span>
+                            <span class="timeBar"></span>
+                        </div>
+                    </div>
+                    <!--<div class="volume" title="Set volume">
+                <span class="volumeBar"></span>
+            </div>-->
+                    <div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+                    <div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+                </div>
+            </div>
+        </a>
+        <a href="#" id="indre">
+            <video id="myVideo" controls preload="auto" poster="http://s.cdpn.io/6035/vp_poster.jpg" width="380">
+                <source src="http://simplypx.com/images/Prometheus.mp4" type="video/mp4" />
+                <p>Your browser does not support the video tag.</p>
+            </video>
+            <div class="caption">Prometheus</div>
+            <div class="control">
+                <div class="btmControl">
+                    <div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+                    <div class="progress-bar">
+                        <div class="progress">
+                            <span class="bufferBar"></span>
+                            <span class="timeBar"></span>
+                        </div>
+                    </div>
+                    <!--<div class="volume" title="Set volume">
+                <span class="volumeBar"></span>
+            </div>-->
+                    <div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+                    <div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+                </div>
+            </div>
+        </a>
+        <a href="#" id="kikser">
+            <video id="myVideo" controls preload="auto" poster="http://s.cdpn.io/6035/vp_poster.jpg" width="380">
+                <source src="http://simplypx.com/images/Prometheus.mp4" type="video/mp4" />
+                <p>Your browser does not support the video tag.</p>
+            </video>
+            <div class="caption">Prometheus</div>
+            <div class="control">
+                <div class="btmControl">
+                    <div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+                    <div class="progress-bar">
+                        <div class="progress">
+                            <span class="bufferBar"></span>
+                            <span class="timeBar"></span>
+                        </div>
+                    </div>
+                    <!--<div class="volume" title="Set volume">
+                <span class="volumeBar"></span>
+            </div>-->
+                    <div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+                    <div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+                </div>
+            </div>
+        </a>
+        <a href="#" id="nikola">
+            <video id="myVideo" controls preload="auto" poster="http://s.cdpn.io/6035/vp_poster.jpg" width="380">
+                <source src="http://simplypx.com/images/Prometheus.mp4" type="video/mp4" />
+                <p>Your browser does not support the video tag.</p>
+            </video>
+            <div class="caption">Prometheus</div>
+            <div class="control">
+                <div class="btmControl">
+                    <div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+                    <div class="progress-bar">
+                        <div class="progress">
+                            <span class="bufferBar"></span>
+                            <span class="timeBar"></span>
+                        </div>
+                    </div>
+                    <!--<div class="volume" title="Set volume">
+                <span class="volumeBar"></span>
+            </div>-->
+                    <div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+                    <div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+                </div>
+            </div>
+        </a>
+        <a href="#" id="stef">
+            <video id="myVideo" controls preload="auto" poster="http://s.cdpn.io/6035/vp_poster.jpg" width="380">
+                <source src="http://simplypx.com/images/Prometheus.mp4" type="video/mp4" />
+                <p>Your browser does not support the video tag.</p>
+            </video>
+            <div class="caption">Prometheus</div>
+            <div class="control">
+                <div class="btmControl">
+                    <div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+                    <div class="progress-bar">
+                        <div class="progress">
+                            <span class="bufferBar"></span>
+                            <span class="timeBar"></span>
+                        </div>
+                    </div>
+                    <!--<div class="volume" title="Set volume">
+                <span class="volumeBar"></span>
+            </div>-->
+                    <div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+                    <div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+                </div>
+            </div>
+        </a>
+        <a href="#" id="miki">
+            <video id="myVideo" controls preload="auto" poster="http://s.cdpn.io/6035/vp_poster.jpg" >
+                <source src="http://simplypx.com/images/Prometheus.mp4" type="video/mp4" />
+                <p>Your browser does not support the video tag.</p>
+            </video>
+            <div class="caption">Prometheus</div>
+            <div class="control">
+                <div class="btmControl">
+                    <div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+                    <div class="progress-bar">
+                        <div class="progress">
+                            <span class="bufferBar"></span>
+                            <span class="timeBar"></span>
+                        </div>
+                    </div>
+                    <!--<div class="volume" title="Set volume">
+                <span class="volumeBar"></span>
+            </div>-->
+                    <div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+                    <div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#" id="ilce">
+            <video id="myVideo" controls preload="auto" poster="http://s.cdpn.io/6035/vp_poster.jpg" width="380">
+                <source src="http://simplypx.com/images/Prometheus.mp4" type="video/mp4" />
+                <p>Your browser does not support the video tag.</p>
+            </video>
+            <div class="caption">Prometheus</div>
+            <div class="control">
+                <div class="btmControl">
+                    <div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+                    <div class="progress-bar">
+                        <div class="progress">
+                            <span class="bufferBar"></span>
+                            <span class="timeBar"></span>
+                        </div>
+                    </div>
+                    <!--<div class="volume" title="Set volume">
+                <span class="volumeBar"></span>
+            </div>-->
+                    <div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+                    <div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+                </div>
+            </div>
+        </a>
+        <a href="#" id="ivo">
+            <video id="myVideo" controls preload="auto" poster="http://s.cdpn.io/6035/vp_poster.jpg" class="fancybox" width="380">
+                <source src="http://simplypx.com/images/Prometheus.mp4" type="video/mp4" />
+                <p>Your browser does not support the video tag.</p>
+            </video>
+            <div class="caption">Prometheus</div>
+            <div class="control">
+                <div class="btmControl">
+                    <div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+                    <div class="progress-bar">
+                        <div class="progress">
+                            <span class="bufferBar"></span>
+                            <span class="timeBar"></span>
+                        </div>
+                    </div>
+                    <!--<div class="volume" title="Set volume">
+                        <span class="volumeBar"></span>
+                    </div>-->
+                    <div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+                    <div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+                </div>
+            </div>
+
+        </a>
+    </figure>
+</div>
+<script src="~/Scripts/video.js"></script>
+@*<script>
+    var tag = document.createElement('script');
+    tag.src = "//www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var youtubePlayer1;
+    var youtubePlayer2;
+    var youtubePlayer3;
+
+    function onYouTubeIframeAPIReady() {
+        youtubePlayer1 = new YT.Player('estee', {
+            height: '240',
+            width: '320',
+            videoId: 'F0eR1KFkt58',
+            events: {
+                'onReady': onPlayerReady1
+            }
+        });
+        youtubePlayer2 = new YT.Player('indre', {
+            height: '240',
+            width: '320',
+            videoId: 'mPTX4guU1W8',
+            events: {
+                'onReady': onPlayerReady2
+            }
+        });
+        youtubePlayer3 = new YT.Player('kikser', {
+            height: '240',
+            width: '320',
+            videoId: 'E-_ONZOcScU',
+            events: {
+                'onReady': onPlayerReady3
+            }
+        });
+    }
+    function onPlayerReady1(event) {
+        event.target.playVideo();
+        $('a').click(function (e) {
+            youtubePlayer1.stopVideo();
+            e.preventDefault();
+        });
+    }
+    function onPlayerReady2(event) {
+        event.target.playVideo();
+        $('a').click(function (e) {
+            youtubePlayer2.stopVideo();
+            e.preventDefault();
+        });
+    }
+    function onPlayerReady3(event) {
+        event.target.playVideo();
+        $('a').click(function (e) {
+            youtubePlayer3.stopVideo();
+            e.preventDefault();
+        });
+    }
+</script>*@

@@ -13,6 +13,9 @@ namespace Watch.Me
 
             bundles.Add(new ScriptBundle("~/bundles/loginToggle").Include(
                         "~/Scripts/loginToggle.js"));
+            bundles.Add(new ScriptBundle("~/bundles/nav").Include(
+                        "~/Scripts/nav.js"));
+
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
