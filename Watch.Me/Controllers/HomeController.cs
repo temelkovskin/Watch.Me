@@ -26,5 +26,10 @@ namespace Watch.Me.Controllers
 
             return View();
         }
+
+        public ActionResult WatchVideo()
+        {
+            return View();
+        }
     }
 }
