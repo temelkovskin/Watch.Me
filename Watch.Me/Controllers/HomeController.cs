@@ -30,5 +30,10 @@ namespace Watch.Me.Controllers
             ViewBag.Message = "Your contact page.";
             return View();
         }
+
+        public ActionResult WatchVideo()
+        {
+            return View();
+        }
     }
 }

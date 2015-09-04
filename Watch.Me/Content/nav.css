@@ -194,7 +194,7 @@
    
     /* Put navbar behind header image*/
     .sub_nav {
-        margin: 0 auto;
+        /*margin: 0 auto;*/
         text-align: left;
     }
 
