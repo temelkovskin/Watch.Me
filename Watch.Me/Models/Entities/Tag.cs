@@ -10,6 +10,7 @@ namespace Watch.Me.Models.Entities
         public int Id { get; set; }
         public string Description { get; set; }
         public string CreatedBy { get; set; }
-        public virtual ICollection<Video> Videos { get; set; } 
+        public virtual ICollection<Video> Videos { get; set; }
+        
     }
 }

@@ -34,5 +34,7 @@ namespace Watch.Me.Models
         public DbSet<Video> Videos { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Comment> Comments { get; set; }
+        public DbSet<TagLogs> TagLogs { get; set; }
+        public DbSet<EmotionsAboutVideo> EmotionsAboutVideos { get; set; }
     }
 }
