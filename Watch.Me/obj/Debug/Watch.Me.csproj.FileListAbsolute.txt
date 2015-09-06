@@ -107,3 +107,4 @@ C:\Users\Kristijan\Desktop\TeamProject\Watch.Me\Watch.Me\bin\Microsoft.Owin.Secu
 C:\Users\Kristijan\Desktop\TeamProject\Watch.Me\Watch.Me\obj\Debug\Watch.Me.csprojResolveAssemblyReference.cache
 C:\Users\Kristijan\Desktop\TeamProject\Watch.Me\Watch.Me\obj\Debug\Watch.Me.dll
 C:\Users\Kristijan\Desktop\TeamProject\Watch.Me\Watch.Me\obj\Debug\Watch.Me.pdb
+E:\Seavus\Watch.Me\Watch.Me\obj\Debug\Watch.Me.csprojResolveAssemblyReference.cache
