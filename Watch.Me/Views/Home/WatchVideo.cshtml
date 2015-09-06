@@ -22,30 +22,29 @@
     </div>
 </div>
 <div class="wrapper_left_video">
-    @*<div class="big-video-container loading">
-            <video class="big-flat-video" autobuffer></video>
-            <div class="controls-bar off">
-                <span class="playPause icon-play"></span>
-                <div class="duration">
-                    <div class="duration-amount"></div>
-                </div>
-                <span class="sound icon-sound"></span>
-            </div>
-            <span class="fullscreen icon-resize-full"></span>
-        </div>*@
 
-    <video id="video" class="big-flat-video" controls="controls">
+    <div class="well">
+        <iframe frameborder="0"  src="https://www.youtube.com/embed/Lp7nSImO5vk"></iframe>
+    </div>
+
+   
+
+    @*<video id="video" class="big-flat-video" controls="controls">
         <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
         <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.webm" type="video/webm">
         <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
-    </video>
+    </video>*@
+
+
+
+
     <div class="video_stuff">
         <div class="video_title">
             <h3>RIBLJA CORBA</h3> @*--------- > tuka treba da se zeme id od title na videoto i da se prikaze*@
         </div>
         <div class="buttons">
-            <a href="#"><img src="~/images/like.png" id="like" /></a>
-            <a href="#"><img src="~/images/dislike.png" id="dislike" /></a>
+            <a href="#"><img src="~/images/like.png" id="like"/></a>
+            <a href="#"><img src="~/images/dislike.png" id="dislike"/></a>
         </div>
     </div>
 
@@ -55,7 +54,8 @@
             <div class='add-new'>
                 <input class='input your-name' placeholder='Type your name here...' type='text'>
                 <textarea class='input your-msg' placeholder='Type your comment here...'></textarea>
-                <button class='send-msg bubble'><p>Comment</p></button>
+                <button class='send-msg bubble'>
+                    <p>Comment</p></button>
             </div>
         </div>
     </div>
