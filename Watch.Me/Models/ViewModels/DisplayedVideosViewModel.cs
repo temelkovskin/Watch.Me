@@ -10,6 +10,7 @@ namespace Watch.Me.Models.ViewModels
         public int Id { get; set; }
         public string VideoTitle { get; set; }
         public string Url { get; set; }
+        public bool LoggedUser { get; set; }
 
         public List<DisplayedVideosViewModel> ReccomendedVideos { get; set; }
         public List<DisplayedVideosViewModel> RecentVideos { get; set; }

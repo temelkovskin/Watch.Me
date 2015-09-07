@@ -1,6 +1,9 @@
 ﻿@{
     ViewBag.Title = "WatchVideo";
 }
+
+@model Watch.Me.Models.ViewModels.WatchVideoViewModel
+
 <link href="~/Content/video.css" rel="stylesheet" />
 <link href="~/Content/search.css" rel="stylesheet" />
 <link href="~/Content/comments.css" rel="stylesheet" />
@@ -24,7 +27,7 @@
 <div class="wrapper_left_video">
 
     <div class="well">
-        <iframe frameborder="0"  src="https://www.youtube.com/embed/Lp7nSImO5vk"></iframe>
+        <iframe frameborder="0" src="@Model.Url"></iframe>
     </div>
 
    
@@ -40,11 +43,22 @@
 
     <div class="video_stuff">
         <div class="video_title">
-            <h3>RIBLJA CORBA</h3> @*--------- > tuka treba da se zeme id od title na videoto i da se prikaze*@
+            <h3>@Model.VideoTitle</h3> @*--------- > tuka treba da se zeme id od title na videoto i da se prikaze*@
+            <p>
+                Tags are here:
+                @foreach (var item in Model.Tags)
+                {
+                    <label>@item.TagDescription</label>
+                }
+            </p>
         </div>
         <div class="buttons">
             <a href="#"><img src="~/images/like.png" id="like"/></a>
             <a href="#"><img src="~/images/dislike.png" id="dislike"/></a>
+        </div>
+        <div>
+            Likes: @Model.NumberLike
+            Dislikes: @Model.NumberDislike
         </div>
     </div>
 

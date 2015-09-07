@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -17,6 +18,8 @@ namespace Watch.Me.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public virtual UserPictures UserPictures { get; set; } 
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -36,5 +39,6 @@ namespace Watch.Me.Models
         public DbSet<Comment> Comments { get; set; }
         public DbSet<TagLogs> TagLogs { get; set; }
         public DbSet<EmotionsAboutVideo> EmotionsAboutVideos { get; set; }
+        public DbSet<UserPictures> UserPictures { get; set; }
     }
 }

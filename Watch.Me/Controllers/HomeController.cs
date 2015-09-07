@@ -12,22 +12,22 @@ namespace Watch.Me.Controllers
 {
     public class HomeController : Controller
     {
-        private ApplicationDbContext _dbContext = new ApplicationDbContext();
+        private readonly ApplicationDbContext _dbContext = new ApplicationDbContext();
         int _mostUsedTag;
 
         public ActionResult Index()
         {
             string userId = User.Identity.GetUserId();
             bool isAdmin = User.IsInRole("admin");
-            
 
-            //if (isAdmin)
-            //{
-            //    return View("~/Views/Admin/AdminHome.cshtml");
-            //}
+            //if logged user is admin it is redirected to admin panel
+            if (isAdmin)
+            {
+                return View("~/Views/Admin/AdminHome.cshtml");
+            }
 
-            
 
+            //Takes the most recent 6 videos 
             var recentVideos = _dbContext.Videos
                 .Where(v => v.IsApproved.Equals(true))
                 .OrderByDescending(o => o.DateCreated)
@@ -64,7 +64,7 @@ namespace Watch.Me.Controllers
                 };
                 mostLikeVideoList.Add(tempList);
             }
-                        
+
 
             //in case is logged user recommended tab in index page will be displayed
             if (userId != null)
@@ -93,31 +93,38 @@ namespace Watch.Me.Controllers
                 //finds recommended vidoes having that tag in many-many relation
                 var recommendVidoes = _dbContext.Videos
                     .Where(v => v.IsApproved.Equals(true)
-                    && v.Tags.Any(tag => tag.Id == _mostUsedTag))
-                .OrderByDescending(o => o.DateCreated)
-                .Take(3)
-                .Select(x => new DisplayedVideosViewModel()
-                {
-                    Id = x.Id,
-                    Url = x.Url,
-                    VideoTitle = x.VideoTitle
-                }).ToList();
+                                && v.Tags.Any(tag => tag.Id == _mostUsedTag))
+                    .OrderByDescending(o => o.DateCreated)
+                    .Take(3)
+                    .Select(x => new DisplayedVideosViewModel()
+                    {
+                        Id = x.Id,
+                        Url = x.Url,
+                        VideoTitle = x.VideoTitle
+                    }).ToList();
 
-                
+
                 var allVideos = new DisplayedVideosViewModel()
                 {
                     PopularVideos = mostLikeVideoList,
                     RecentVideos = recentThreeVideos,
-                    ReccomendedVideos = recommendVidoes
+                    ReccomendedVideos = recommendVidoes,
+                    LoggedUser = true
                 };
                 return View(allVideos);
             }
 
-
-            return View();
-
-
-
+                //in case it is anonymous user
+            else
+            {
+                var allVideos = new DisplayedVideosViewModel()
+                {
+                    PopularVideos = mostLikeVideoList,
+                    RecentVideos = recentVideos,
+                    LoggedUser = false
+                };
+            return View(allVideos);
+            }
         }
 
         public ActionResult About()
@@ -133,10 +140,10 @@ namespace Watch.Me.Controllers
             return View();
         }
 
-        public ActionResult WatchVideo()
-        {
-            return View();
-        }
+        //public ActionResult WatchVideo(int videoId)
+        //{
+        //    return View();
+        //}
 
         
     }

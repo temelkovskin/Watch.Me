@@ -40,8 +40,9 @@
                     <div class="top-controls-bar off">
                         <div class="info">
                             <h2 class="title">
-
-                                @Html.ActionLink(".", "WatchVideo", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                                @* TODO: Kristijan change the title of the video. It looks ugly :) *@
+                                
+                                @Html.ActionLink(@item.VideoTitle, "Index", "WatchVideo", new { videoId = @item.Id }, new { @class = "navbar-brand" })
                             </h2>
                         </div>
                         <span class="fullscreen icon-resize-full"></span>
@@ -66,7 +67,7 @@
                 <div class="info">
                     <h2 class="title">
 
-                        @Html.ActionLink(".", "WatchVideo", "Home", new {area = ""}, new {@class = "navbar-brand"})
+                        @Html.ActionLink(@item.VideoTitle, "Index", "WatchVideo", new { videoId = @item.Id }, new { @class = "navbar-brand" })
                     </h2>
                 </div>
                 <span class="fullscreen icon-resize-full"></span>
@@ -76,28 +77,32 @@
 </div>
 
 
-<div class="video_wrapper" id="recomended">
-    <h2 class="title">Recommended videos</h2>
-    @foreach (var item in Model.ReccomendedVideos)
-    {
-        <div class="video-container loading">
-            <div class="well">
-                <iframe frameborder="0" src="@item.Url"></iframe>
-            </div>
-
-
-            <div class="top-controls-bar off">
-                <div class="info">
-                    <h2 class="title">
-
-                        @Html.ActionLink(".", "WatchVideo", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                    </h2>
+@if (Model.LoggedUser == true)
+{
+    <div class="video_wrapper" id="recomended">
+        <h2 class="title">Recommended videos</h2>
+        @foreach (var item in Model.ReccomendedVideos)
+        {
+            <div class="video-container loading">
+                <div class="well">
+                    <iframe frameborder="0" src="@item.Url"></iframe>
                 </div>
-                <span class="fullscreen icon-resize-full"></span>
+
+
+                <div class="top-controls-bar off">
+                    <div class="info">
+                        <h2 class="title">
+
+                            @Html.ActionLink(@item.VideoTitle, "Index", "WatchVideo", new { videoId = @item.Id }, new { @class = "navbar-brand" })
+                        </h2>
+                    </div>
+                    <span class="fullscreen icon-resize-full"></span>
+                </div>
             </div>
-        </div>
-    }
-</div>
+        }
+    </div>
+}
+
 
 
 

@@ -9,8 +9,7 @@ namespace Watch.Me.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "Watch.Me.Models.ApplicationDbContext";
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(Watch.Me.Models.ApplicationDbContext context)
