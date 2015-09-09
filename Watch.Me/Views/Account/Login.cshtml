@@ -2,41 +2,49 @@
 @model LoginViewModel
 
 @*@{
-            ViewBag.Title = "Log in";
-  
-        }
+        ViewBag.Title = "Log in";
 
-        <h2>@ViewBag.Title.</h2>*@
+    }
+
+    <h2>@ViewBag.Title.</h2>*@
 
 <link href="~/Content/register.css" rel="stylesheet" />
 <div class="register_container" data-position="1">
+        <div id="animated-example" class="animated fadeInLeftBig">
+            <img src="/images/fade.png" id="monk" />
+        </div>
 
-    <img src="/images/monk.png" id="monk" />
-    @*<p class="speech">Register or....</p>*@
+        @*<p class="speech">Register or....</p>*@
+    <div id="animated-example" class="animated fadeInRightBig">
 
-    <div class="register">
-        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-        {
+        <div class="register">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
             @Html.AntiForgeryToken()
             <div id="reg_form">
-                <h4>Use a local account to log in.</h4>
-                <hr/>
+                <h4 class="form_title">Use a local account to log in.</h4>
+         
 
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-                @Html.TextBoxFor(m => m.Email)
+                @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label", @id = "label" })
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-                @Html.PasswordFor(m => m.Password)
+                @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label", @id = "label" })
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+
                
-                <input type="submit" class="button" value="Log in" />
-           
+                <input type="submit" class="button" value="Log in"/>
+                @*ovde treba da se ubaci Redirect to RegisterForm*@
+                <h4 id="label_title">@Html.ActionLink("Register as a new user", "Register", new { @id = "label" })</h4>
+
+
             </div>
 
-        }
+            }
 
+        </div>
     </div>
-
 </div>
 
 @section Scripts {

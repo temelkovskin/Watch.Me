@@ -3,34 +3,40 @@
 <link href="~/Content/register.css" rel="stylesheet" />
 
 <div class="register_container" data-position="1">
-
-    <img src="/images/monk.png" id="monk"/>
-    @*<p class="speech">Register or....</p>*@
-
-    <div class="register">
-        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-        {
-            @Html.AntiForgeryToken()
-    <div id="reg_form">
-      
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label", @id = "label" })
-        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label", @id = "label" })
-        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label", @id = "label" })
-        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-
-        <input type="submit" class="button" value="Register"/>
-
-
-
-
+    <div id="animated-example" class="animated fadeInLeftBig">
+        <img src="~/images/fade.png" id="monk" />
     </div>
+    
+    @*<p class="speech">Register or....</p>*@
+    <div id="animated-example" class="animated fadeInRightBig">
+        <div class="register">
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+                @Html.AntiForgeryToken()
+                <div id="reg_form">
+                    <h4 class="form_title">Register now !!!</h4>
+
+                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label", @id = "label" })
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label", @id = "label" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                    @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label", @id = "label" })
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                    @Html.Label("male", "Male")
+                    @*@Html.RadioButtonFor(m => m.isFemale, "false", new{id = "male"})*@
+                    @Html.Label("female", "Female")
+                    @*@Html.RadioButtonFor(m => m.isFemale, "true", new{id = "female"})*@
+                    <input type="submit" class="button" value="Register" />
+
+
+
+
+                </div>
 
         }
 
+        </div>
     </div>
-
 </div>
 
 
