@@ -228,6 +228,8 @@
     <Content Include="Content\search.css" />
     <Content Include="Content\slider.css" />
     <Content Include="Content\sliderMain.css" />
+    <Content Include="Content\uploadContainer.css" />
+    <Content Include="Content\userForm.css" />
     <Content Include="Content\video.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -236,6 +238,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\bg.png" />
     <Content Include="images\dislike.png" />
+    <Content Include="images\fade.png" />
     <Content Include="images\like.png" />
     <Content Include="images\monk.png" />
     <Content Include="images\srch.png" />
@@ -276,6 +279,9 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\sb-admin-2.js" />
     <Content Include="Scripts\slider.js" />
+    <Content Include="Scripts\uploader.js" />
+    <Content Include="Scripts\uploadForm.js" />
+    <Content Include="Scripts\userForm.js" />
     <Content Include="Scripts\video.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -319,10 +325,10 @@
     <Content Include="Views\Admin\_AdminMaster.cshtml" />
     <Content Include="Views\Admin\_AdminMenu.cshtml" />
     <Content Include="Views\Admin\AdminHome.cshtml" />
+    <Content Include="Views\Shared\_UploadForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\WatchVideo\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

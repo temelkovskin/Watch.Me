@@ -8,14 +8,17 @@
 <link href="~/Content/video.css" rel="stylesheet" />
 <link href="~/Content/search.css" rel="stylesheet" />
 <link href="~/Content/slider.css" rel="stylesheet" />
-
-<div class="sub_nav">
+<div id="userForm">
+    @Html.Partial("_LoginPartial")
+</div>
+@*<div class="sub_nav">
     <div class="listi">
         <ul>
             <li class="active"><a href="#modern">Popular</a></li>
             <li><a href="#oldSkool">Recommended</a></li>
             <li><a href="#oldSkool">Recently Uploaded</a></li>
         </ul>
+
     </div>
     <div class='search'>
         <div class='search-container'>
@@ -25,7 +28,8 @@
             </a>
         </div>
     </div>
-</div>
+</div>*@
+
 
 <div class="content">
     <h2 class="titleVideos">Popular Videos</h2>
