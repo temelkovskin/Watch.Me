@@ -165,3 +165,5 @@ E:\Seavus\Watch.MeKids\Watch.Me\Watch.Me\obj\Debug\Watch.Me.pdb
 E:\Seavus\Watch.MeKids\Watch.Me\Watch.Me\obj\Debug\Watch.Me.csprojResolveAssemblyReference.cache
 E:\Seavus\Watch.MeKids\Watch.Me\Watch.Me\obj\Debug\Watch.Me.Migrations.init.resources
 E:\Seavus\Watch.MeKids\Watch.Me\Watch.Me\obj\Debug\Watch.Me.csproj.GenerateResource.Cache
+C:\Users\Kristijan\Desktop\TeamProject\Watch.Me\Watch.Me\obj\Debug\Watch.Me.Migrations.init.resources
+C:\Users\Kristijan\Desktop\TeamProject\Watch.Me\Watch.Me\obj\Debug\Watch.Me.csproj.GenerateResource.Cache

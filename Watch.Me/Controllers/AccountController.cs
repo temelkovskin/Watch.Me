@@ -175,6 +175,35 @@ namespace Watch.Me.Controllers
             return View(model);
         }
 
+
+
+
+
+
+        //public ActionResult CheckBox()
+        //{
+        //    return View(new RegisterViewModel
+        //    {
+        //        IsFemale = true
+        //    });
+        //}
+
+        //[HttpPost]
+        //public ActionResult CheckBox(RegisterViewModel model)
+        //{
+        //    return RedirectToAction("Index", "Home");
+        //}
+
+
+
+
+
+
+
+
+
+
+
         //
         // GET: /Account/ConfirmEmail
         [AllowAnonymous]
@@ -405,6 +434,8 @@ namespace Watch.Me.Controllers
         {
             return View();
         }
+
+
 
         #region Helpers
         // Used for XSRF protection when adding external logins

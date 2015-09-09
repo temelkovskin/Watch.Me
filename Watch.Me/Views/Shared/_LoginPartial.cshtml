@@ -1,16 +1,74 @@
 ﻿@using Microsoft.AspNet.Identity
+<link href="~/Content/userForm.css" rel="stylesheet" />
+<link href="~/Content/uploadContainer.css" rel="stylesheet" />
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
     @Html.AntiForgeryToken()
 
-    <ul class="nav navbar-nav navbar-right">
-        <li>
-            @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-        </li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
-    </ul>
+ 
+    <div class="mobile-wrap">
+        <div class="mobile clearfix">
+            <div class="header">
+                <span class="ion-ios-navicon pull-left"><i></i></span>
+                <span class="title">@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</span>
+            </div>
+
+            <div class="sidebar">
+                <div class="sidebar-overlay"></div>
+                <div class="sidebar-content">
+                    <div class="top-head">
+
+                        <img class="profilepic" src="#"> @*tuka treba da se vlece slikata od baza*@
+                        <div class="name">@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new {title = "Manage"})</div>
+
+
+                    </div>
+                    <div class="nav-left">
+                        <div class="btn"></div>
+                        <div class="icon-bg">
+                            <div class="icon"></div>
+                        </div>
+                       
+                        <a href="#settings"><span class="ion-ios-gear-outline"></span> Settings</a>
+                    </div>
+                    <div class="logout">
+                        <label class="logoff_btn">
+                            <input type="checkbox">
+                            <span></span>
+                            <span><a href="javascript:document.getElementById('logoutForm').submit()"></a></span>
+                        </label>
+                        
+                    </div>
+                </div>
+
+            </div>
+           
+            <div class="content">
+
+                <div class="html welcome visible">
+                </div>
+                <div class="html alarm">
+                </div>
+                <div class="alarm-list">
+                </div>
+                <div class="html compose">
+                </div>
+                <div class="html chats">
+                </div>
+                <div class="html settings">
+                </div>
+                <div class="html profile">
+                </div>
+                <div class="html credits">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
     }
 }
 else
@@ -20,3 +78,10 @@ else
         <li>@Html.ActionLink("Sign In", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
     </ul>
 }
+
+@Html.Partial("_UploadForm")
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="~/Scripts/userForm.js"></script>
+<script src="~/Scripts/uploadForm.js"></script>

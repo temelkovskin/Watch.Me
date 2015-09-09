@@ -18,14 +18,21 @@ namespace Watch.Me.Controllers
         public ActionResult Index()
         {
             string userId = User.Identity.GetUserId();
-            bool isAdmin = User.IsInRole("admin");
+            //bool isAdmin = User.IsInRole("admin");
 
             //if logged user is admin it is redirected to admin panel
+<<<<<<< HEAD
             if (!isAdmin)
             {
                 return RedirectToAction("Index", "AdminVideos");
                 //return View("~/Views/Admin/AdminHome.cshtml");
             }
+=======
+            //if (isAdmin)
+            //{
+            //    return View("~/Views/Admin/AdminHome.cshtml");
+            //}
+>>>>>>> 506737a5632a778a36570661015f18de1bb9131d
 
 
             //Takes the most recent 6 videos 

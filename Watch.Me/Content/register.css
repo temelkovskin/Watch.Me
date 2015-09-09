@@ -1,6 +1,4 @@
-﻿/*Inspired by Basecamp Register form */
-
-@keyframes shake {
+﻿@keyframes shake {
   0%, 100% {
     transform: translateX(0);
   }
@@ -104,8 +102,10 @@
   text-decoration: none;
   color: #000;
 }
-
-#label {
+.form_title {
+    font-size: 2.0em !important;
+}
+#label, .form_title {
      display: block;
     margin-bottom: 5px;
     font-size: 1.4em;
@@ -113,6 +113,16 @@
     width: 100%;
     text-align: center;
     font-family: Gabriola;
+}
+#label_title a {
+    display: block;
+    margin-bottom: 5px ;
+    font-size: 1.1em ;
+    color: #7a3e1a ;
+    width: 100% ;
+    text-align: end ;
+    font-family: Gabriola;
+    text-decoration:none;
 }
 
 #input-txt {
@@ -132,17 +142,18 @@
 }
 
 .button[type=submit] {
-  box-sizing: border-box;
-  display: block;
-  padding: 8px 30px 10px 30px;
-  margin-top: 10px;
-  width: 300px;
-  text-shadow: 0 1px 1px #fff;
-  border: 1px solid #7f3f1b;
-  border-radius: 4px;
-  color: #7a3e1a;
-  font-size: 1.2em;
-  background-image: linear-gradient(#e4d730, #998002);
+      box-sizing: border-box;
+    display: block;
+    padding: 8px 30px 10px 30px;
+    margin-top: 25px;
+    width: 300px;
+    text-shadow: 0 1px 1px #fff;
+    border: 1px solid #7f3f1b;
+    border-radius: 4px;
+    color: #7a3e1a;
+    font-size: 1.2em;
+    background-image: linear-gradient(#e4d730, #998002);
+    margin-bottom: 25px;
 }
 /*This is for p Register or....*/
 
@@ -223,4 +234,71 @@ p.thought:after
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
 	border-radius: 18px;
+}
+.animated { 
+    -webkit-animation-duration: 2s; 
+    animation-duration: 2s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out; 
+} 
+
+@-webkit-keyframes fadeInLeftBig { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateX(-2000px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+} 
+@keyframes fadeInLeftBig { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(-2000px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+} 
+.fadeInLeftBig { 
+    -webkit-animation-name: fadeInLeftBig; 
+    animation-name: fadeInLeftBig; 
+}
+
+.animated { 
+    -webkit-animation-duration: 1.5s; 
+    animation-duration: 1.5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out; 
+} 
+
+@-webkit-keyframes fadeInRightBig { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateX(2000px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+} 
+@keyframes fadeInRightBig { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(2000px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+} 
+.fadeInRightBig { 
+    -webkit-animation-name: fadeInRightBig; 
+    animation-name: fadeInRightBig; 
 }

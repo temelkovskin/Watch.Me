@@ -79,6 +79,10 @@ namespace Watch.Me.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        //ova e za female or male
+
+        public bool IsFemale { get; set; }
     }
 
     public class ResetPasswordViewModel
