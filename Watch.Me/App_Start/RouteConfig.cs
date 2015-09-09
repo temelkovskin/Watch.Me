@@ -18,6 +18,10 @@ namespace Watch.Me
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute("WatchVideo", "video/id/",
+                new { controller = "WatchVideo", action = "SelectedVideo" },
+                new[] { "Watch.Me.Controllers" });
         }
     }
 }

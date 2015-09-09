@@ -21,9 +21,10 @@ namespace Watch.Me.Controllers
             bool isAdmin = User.IsInRole("admin");
 
             //if logged user is admin it is redirected to admin panel
-            if (isAdmin)
+            if (!isAdmin)
             {
-                return View("~/Views/Admin/AdminHome.cshtml");
+                return RedirectToAction("Index", "AdminVideos");
+                //return View("~/Views/Admin/AdminHome.cshtml");
             }
 
 

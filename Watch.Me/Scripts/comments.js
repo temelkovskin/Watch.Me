@@ -21,6 +21,7 @@ $(function () {
       }
     ?>
     */
+
     var allComments = [{
         userid: '1',
         name: 'Tester 1',
