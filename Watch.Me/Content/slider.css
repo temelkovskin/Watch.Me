@@ -1,0 +1,135 @@
+#title_frame {
+    width: 100%;
+    text-align: center;
+    float: left;
+    top: 150px;
+    color: green;
+    height: 20%;
+}
+
+.titleVideos {
+    color: rgb(76, 196, 196);
+    font-size: 39px;
+    text-shadow: rgba(255, 255, 255, 0.2) 3px 2px 3px;
+    text-align: center;
+}
+
+#title_frame a {
+    text-align: center;
+    margin-left: 35%;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 24px;
+    text-shadow: rgba(255, 255, 255, 0.2) 3px 2px 3px;
+}
+
+    #title_frame a:hover {
+        text-shadow: -2px -1px 8px #2F3780;
+    }
+
+#ytplayer {
+    /*width:25%;*/
+    height: 150px;
+}
+
+.bx-viewport {
+    height: 200px !important;
+}
+
+.bx-wrapper {
+    max-width: 802px;
+    margin-top: 25px !important;
+    height: 200px;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+.feature {
+    width: 100%;
+}
+
+.preview-wrapper {
+    position: relative;
+    padding: 20px 0px;
+    box-shadow: 0px 9px 0px 0px rgba(255, 255, 255, 0), 0px -9px 0px 0px rgba(255, 255, 255, 0), 10px 0px 30px 0px rgba(0, 0, 0, 0.15), -10px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    min-height: 150px;
+    margin: 15px auto;
+    font-family: "Helvetica Neue",arial,sans-serif;
+    font-size: 15px;
+}
+
+    .preview-wrapper::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    .preview-wrapper .bx-prev, .preview-wrapper .bx-next {
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        opacity: 0.35;
+        color: transparent;
+    }
+
+    .preview-wrapper .bx-prev {
+        left: 0;
+        background: url("http://s9.postimg.org/otmdy02vv/angle_left.png") no-repeat;
+        background-position: center;
+    }
+
+    .preview-wrapper .bx-next {
+        right: 0;
+        background: url("http://s9.postimg.org/lbae1m1zv/angle_right.png") no-repeat;
+        background-position: center;
+    }
+
+.previews {
+    width: 85%;
+}
+
+    .previews::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+.preview {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    width: 30%;
+}
+
+[data-aspect-ratio] {
+    display: block;
+    max-width: 100%;
+    position: relative;
+}
+
+    [data-aspect-ratio]:before {
+        content: '';
+        display: block;
+    }
+
+    [data-aspect-ratio] > * {
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+[data-aspect-ratio="16:9"]:before {
+    padding-top: 56.25%;
+}
+
+.test {
+    background: red;
+}

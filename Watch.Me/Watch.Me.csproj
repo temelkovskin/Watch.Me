@@ -226,6 +226,8 @@
     <Content Include="Content\nav.css" />
     <Content Include="Content\register.css" />
     <Content Include="Content\search.css" />
+    <Content Include="Content\slider.css" />
+    <Content Include="Content\sliderMain.css" />
     <Content Include="Content\video.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -256,6 +258,7 @@
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <Content Include="Scripts\jquery.catslider.js" />
     <Content Include="Scripts\jquery.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -265,12 +268,14 @@
     <Content Include="Scripts\loginToggle.js" />
     <Content Include="Scripts\metisMenu.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\modernizr.custom.63321.js" />
     <Content Include="Scripts\nav.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\sb-admin-2.js" />
+    <Content Include="Scripts\slider.js" />
     <Content Include="Scripts\video.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
